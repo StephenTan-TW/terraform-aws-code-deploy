@@ -176,9 +176,9 @@ resource "aws_codedeploy_deployment_group" "default" {
 
     content {
       ec2_tag_filter {
-        key   = ec2_tag_filter.value.key
-        type  = ec2_tag_filter.value.type
-        value = ec2_tag_filter.value.value
+        key   = ec2_tag_set.value.key
+        type  = ec2_tag_set.value.type
+        value = ec2_tag_set.value.value
       }
     }
   }
